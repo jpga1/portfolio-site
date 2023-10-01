@@ -2,6 +2,9 @@ body{
     background-color: black;
     color: white;
     font-family: arial, sans-serif;
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: center;
 }
 
 header{
@@ -40,12 +43,6 @@ nav a:hover{
 
 h3{
     text-align: center;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 500px;
-    justify-content: center;
 }
 
 .projects{
