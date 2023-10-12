@@ -5,42 +5,65 @@
         <meta charset="utf-8">
         <meta name="author" content="josh k">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <style>
+            .project{
+                border-radius: 20px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .project-image{
+                width: 100%;
+                height: 100px;
+                background-color: gray;
+                border-radius: 20px 20px 0px 0px
+            }
+        </style>
     </head>
 
-    <body>
-        <header>
-            <div class="header-contents">
+    <body class="bg-dark">
+        <header class="jumbotron jumbotron-fluid text-center">
+            <div>
                 <h1>Josh Kho</h1>
                 <h2>Front-end Web Development</h2>
 
-                <nav>
-                    <a href="#">Phone Number</a>
-                    <a href="#">Email</a>
-                    <a href="#">Linked-in</a>
+                <nav class="row">
+                    <a class="col text-decoration-none text-body border" href="#">Phone Number</a>
+                    <a class="col text-decoration-none text-body border" href="#">Email</a>
+                    <a class="col text-decoration-none text-body border" href="#">Linked-in</a>
                 </nav>
             </div>
         </header>
 
         <main>
-            <section>
+            <section class="container text-center text-light">
                 <h3>Projects</h3>
 
-                <article class="projects">
+                <article class="border project">
+                    <!-- <img class="rounded" src="#" alt=""> -->
                     <div class="project-image"></div>
                     <div class="project-description">
                         <h4>Project Title</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
                     </div>
                 </article>
-                <article class="projects">
+                <article class="border project">
+                    <!-- <img class="rounded" src="#" alt=""> -->
                     <div class="project-image"></div>
                     <div class="project-description">
                         <h4>Project Title</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
                     </div>
                 </article>
-                <article class="projects">
+                <article class="border project">
+                    <!-- <img class="rounded" src="#" alt=""> -->
                     <div class="project-image"></div>
                     <div class="project-description">
                         <h4>Project Title</h4>
