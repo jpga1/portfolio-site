@@ -13,6 +13,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <style>
+            body{
+                background-color: black;
+            }
+
             .project{
                 border-radius: 20px;
                 margin-top: 50px;
@@ -25,51 +29,74 @@
                 background-color: gray;
                 border-radius: 20px 20px 0px 0px
             }
+
+            .jumbotron{
+                border-radius: 20px;
+            }
+
+            nav a{
+                border-radius: 20px;
+                margin-left: 50px;
+                margin-right: 50px;
+                background-color: black;
+            }
+
+            nav a:hover{
+                border-color: black;
+                background-color: gray;
+                color: black
+            }
         </style>
     </head>
 
-    <body class="bg-dark">
-        <header class="jumbotron jumbotron-fluid text-center">
-            <div>
-                <h1>Josh Kho</h1>
-                <h2>Front-end Web Development</h2>
+    <body>
+        <header class="container text-center">
+            <div class="jumbotron">
+                <h1 class="display-3">Josh Kho</h1>
+                <h2 class="display-4">Front-end Web Development</h2>
 
                 <nav class="row">
-                    <a class="col text-decoration-none text-body border" href="#">Phone Number</a>
-                    <a class="col text-decoration-none text-body border" href="#">Email</a>
-                    <a class="col text-decoration-none text-body border" href="#">Linked-in</a>
+                    <a class="col border border-white text-decoration-none" href="#">Phone Number</a>
+                    <a class="col border border-white text-decoration-none" href="#">Email</a>
+                    <a class="col border border-white text-decoration-none" href="#">Linked-in</a>
                 </nav>
             </div>
         </header>
 
-        <main>
+        <main class="container">
             <section class="container text-center text-light">
                 <h3>Projects</h3>
 
-                <article class="border project">
-                    <!-- <img class="rounded" src="#" alt=""> -->
-                    <div class="project-image"></div>
-                    <div class="project-description">
-                        <h4>Project Title</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
-                    </div>
-                </article>
-                <article class="border project">
-                    <!-- <img class="rounded" src="#" alt=""> -->
-                    <div class="project-image"></div>
-                    <div class="project-description">
-                        <h4>Project Title</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
-                    </div>
-                </article>
-                <article class="border project">
-                    <!-- <img class="rounded" src="#" alt=""> -->
-                    <div class="project-image"></div>
-                    <div class="project-description">
-                        <h4>Project Title</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
-                    </div>
-                </article>
+                <div class="container">
+                    <article class="project border">
+                        <!-- <img class="rounded" src="#" alt=""> -->
+                        <div class="project-image"></div>
+                        <div class="project-description">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="project border">
+                        <!-- <img class="rounded" src="#" alt=""> -->
+                        <div class="project-image"></div>
+                        <div class="project-description">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="project border">
+                        <!-- <img class="rounded" src="#" alt=""> -->
+                        <div class="project-image"></div>
+                        <div class="project-description">
+                            <h4>Project Title</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestias ipsum nesciunt aperiam minima porro provident esse fugiat quam. Magni est porro ducimus iure ratione repudiandae natus sunt, placeat alias.</p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
     </body>
