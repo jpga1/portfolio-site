@@ -15,99 +15,81 @@
         <style>
             body{
                 background-color: black;
+                font-family: Arial, Helvetica, sans-serif;
 
                 display: grid;
                 grid-template-columns: auto;
-                grid-template-rows: 2fr 3fr 1fr;
+                grid-template-rows: 375px 3fr auto;
             }
 
-            .flex-container{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .card{
-                width: 600px;
-                margin: 10px;
+            .projects{
+                display: grid;
+                gap: 50px
             }
 
             footer{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
         </style>
     </head>
 
-    <body>
+    <body class="p-0 m-0">
         <!-- name and position of interest -->
-        <header class="container text-center">
-            <div class="jumbotron">
-                <h1 class="display-3">Josh Kho</h1>
-                <h2 class="display-4">Front-end Web Development</h2>
+        <header class="container-fluid bg-white text-center py-5">
+            <div class="my-5">
+                <h1 class="display-3">Front-end Web Development</h1>
+                <p>Greetings, I'm Josh Kho.</p>    
             </div>
         </header>
 
-        <main>
-            <section class="container-fluid text-center text-light">
-                <h3>Projects</h3>
+        <main class="m-0 p-3 text-center text-white">
 
-                <div class="flex-container">
-                    <div class="card bg-dark">
-                        <img class="card-img-top" src="#" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Project Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto minus dolore corporis dicta deleniti asperiores cumque corrupti, ratione laboriosam repellendus rerum facilis accusantium. Quaerat vero labore commodi corrupti nam!</p>
-                        </div>
+            <h3>Projects</h3>
+
+            <section class="container-fluid text-center text-light p-5 col projects">
+
+                <div class="row mx-auto w-50">
+
+                    <div class="col">
+                        <img src="image-example.png" alt="test image" class="w-100">
                     </div>
 
-                    <div class="card bg-dark">
-                        <img class="card-img-top" src="#" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Project Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto minus dolore corporis dicta deleniti asperiores cumque corrupti, ratione laboriosam repellendus rerum facilis accusantium. Quaerat vero labore commodi corrupti nam!</p>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark">
-                        <img class="card-img-top" src="#" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Project Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto minus dolore corporis dicta deleniti asperiores cumque corrupti, ratione laboriosam repellendus rerum facilis accusantium. Quaerat vero labore commodi corrupti nam!</p>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark">
-                        <img class="card-img-top" src="#" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Project Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto minus dolore corporis dicta deleniti asperiores cumque corrupti, ratione laboriosam repellendus rerum facilis accusantium. Quaerat vero labore commodi corrupti nam!</p>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark">
-                        <img class="card-img-top" src="#" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Project Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto minus dolore corporis dicta deleniti asperiores cumque corrupti, ratione laboriosam repellendus rerum facilis accusantium. Quaerat vero labore commodi corrupti nam!</p>
-                          </div>
-                    </div>
-
-                    <div class="card bg-dark">
-                        <img class="card-img-top" src="#" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Project Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto minus dolore corporis dicta deleniti asperiores cumque corrupti, ratione laboriosam repellendus rerum facilis accusantium. Quaerat vero labore commodi corrupti nam!</p>
-                        </div>
-                    </div>
+                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
 
                 </div>
+
+                <div class="row mx-auto w-50">
+
+                    <div class="col">
+                        <img src="image-example.png" alt="test image" class="w-100">
+                    </div>
+
+                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
+
+                </div>
+
+                <div class="row mx-auto w-50">
+
+                    <div class="col">
+                        <img src="image-example.png" alt="test image" class="w-100">
+                    </div>
+
+                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
+
+                </div>
+
             </section>
+
         </main>
-        <footer class="container-fluid bg-dark text-white text-center">
-            <span>Contact me: </span>
-            <span>joshua.kho24@houghton.edu</span>
+        <footer class="container-fluid bg-dark text-white text-center p-2">
+            <h3>Contact:</h3>
+            <p>&lt;email&gt;</p>
+            <p>&lt;github&gt;</p>
+            <p>&lt;linkedin&gt;</p>
+            <p>&lt;phone number&gt;</p>
         </footer>
     </body>
 </html>
