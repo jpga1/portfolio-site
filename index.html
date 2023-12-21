@@ -13,20 +13,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <style>
+            /* set the background color and fonts */
             body{
                 background-color: black;
                 font-family: Arial, Helvetica, sans-serif;
-
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: 375px 3fr auto;
             }
 
+            /* add gaps between project cards */
             .projects{
                 display: grid;
                 gap: 50px
             }
 
+            /* arrange contact information vertically */
             footer{
                 display: flex;
                 flex-direction: column;
@@ -36,7 +35,7 @@
         </style>
     </head>
 
-    <body class="p-0 m-0">
+    <body class="p-0 m-0 col">
         <!-- name and position of interest -->
         <header class="container-fluid bg-white text-center py-5">
             <div class="my-5">
@@ -45,46 +44,29 @@
             </div>
         </header>
 
-        <main class="m-0 p-3 text-center text-white">
-
+        <main class="p-5 text-center text-white">
             <h3>Projects</h3>
 
-            <section class="container-fluid text-center text-light p-5 col projects">
+            <section class="container-fluid text-light p-5 col projects">
 
                 <div class="row mx-auto w-50">
-
                     <div class="col">
                         <img src="image-example.png" alt="test image" class="w-100">
                     </div>
-
                     <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
-
                 </div>
 
                 <div class="row mx-auto w-50">
-
                     <div class="col">
                         <img src="image-example.png" alt="test image" class="w-100">
                     </div>
-
                     <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
-
-                </div>
-
-                <div class="row mx-auto w-50">
-
-                    <div class="col">
-                        <img src="image-example.png" alt="test image" class="w-100">
-                    </div>
-
-                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
-
                 </div>
 
             </section>
 
         </main>
-        <footer class="container-fluid bg-dark text-white text-center p-2">
+        <footer class="container-fluid bg-dark text-white text-center p-5 row">
             <h3>Contact:</h3>
             <p>&lt;email&gt;</p>
             <p>&lt;github&gt;</p>
