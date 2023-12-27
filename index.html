@@ -20,9 +20,13 @@
             }
 
             /* add gaps between project cards */
-            .projects{
+            .projects, .volunteer-work{
                 display: grid;
                 gap: 50px
+            }
+
+            .project-title{
+                font-weight: bold;
             }
 
             /* arrange contact information vertically */
@@ -48,21 +52,55 @@
             <h3>Projects</h3>
 
             <section class="container-fluid text-light p-5 col projects">
-
-                <div class="row mx-auto w-50">
+                <!-- project card template -->
+                <!-- <div class="row mx-auto w-50">
                     <div class="col">
                         <img src="image-example.png" alt="test image" class="w-100">
                     </div>
-                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
+                    <div class="col">
+                        <p class="project-title">Project Title</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde dignissimos, cum magni earum perspiciatis iure similique officiis architecto aspernatur at culpa ipsam iste. Odit iusto aliquid sunt alias molestiae!</p>
+                        <a href="#">View project page</a>
+                    </div>
+                </div> -->
+
+                <div class="row mx-auto w-50">
+                    <div class="col">
+                        <img src="assets/image-example.png" alt="test image" class="w-100">
+                    </div>
+                    <div class="col">
+                        <p class="project-title">Debian Mockup Webpage</p>
+                        <p>A mockup webpage of Debian.org that intends to explore improvements in layout, aesthetics, user-friendliness, and minimalism.</p>
+                        <a href="#">View project page</a>
+                    </div>
                 </div>
 
                 <div class="row mx-auto w-50">
                     <div class="col">
-                        <img src="image-example.png" alt="test image" class="w-100">
+                        <img src="assets/image-example.png" alt="test image" class="w-100 h-100">
                     </div>
-                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero tenetur ab alias iste corporis, sequi necessitatibus voluptatum corrupti sint! Ut animi corrupti sapiente! Sint alias deleniti in earum officiis!</div>
+                    <div class="col">
+                        <p class="project-title">Generic Video Sharing Webpage</p>
+                        <p>A generic video sharing webpage, inspired by youtube.com, that explores bootstrap 4 technologies.</p>
+                        <a href="#">View project page</a>
+                    </div>
                 </div>
 
+            </section>
+
+            <h3>Volunteer Work</h3>
+
+            <section class="container-fluid text-light p-5 col volunteer-work">
+                <div class="row mx-auto w-50">
+                    <div class="col">
+                        <img src="assets/houghton-gpa-calculator-sample-image.png" alt="test image" class="w-100 h-100">
+                    </div>
+                    <div class="col">
+                        <p class="project-title">Grade Point Average Calculator</p>
+                        <p>Calculates the current semester grade point average and overall grade point average based on current semester credits, cummulative credits, and cummulative grade point average data. Credit and grading schemes are based on Houghton University's standards</p>
+                        <a href="#">View project page</a>
+                    </div>
+                </div>
             </section>
 
         </main>
