@@ -19,33 +19,24 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            /* add gaps between project cards */
-            /* .projects, .volunteer-work{
-                display: grid;
-                gap: 50px
-            } */
-
             img{
-                width: 375px;
-                height: 375px;
+                width: 100%;
             }
 
-            /* arrange contact information vertically */
-            /* footer{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            } */
+            .project-image-container{
+                width: 375px;
+            }
 
-            /* .footer-bottom{
-                display: flex;
-                gap: 100px;
-            } */
+            .project{
+                background-color: grey;
+                border: 1px solid grey;
+                border-radius: 10px;
+            }
         </style>
     </head>
 
     <body class="p-0 m-0 d-flex flex-column">
+        <!-- navigation bar -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <a class="navbar-brand" href="#">Joshua Kho</a>
 
@@ -58,7 +49,7 @@
                 </li>
             </ul>
         </nav>
-        <!-- name and position of interest -->
+        <!-- heading -->
         <header class="container-fluid text-white text-center py-5">
             <div class="my-5">
                 <h1 class="display-3">Front-end Web Development</h1>
@@ -98,6 +89,7 @@
 
         <main class="p-5 text-center text-white d-flex flex-column">
 
+            <!-- projects -->
             <section class="container-fluid p-5 projects d-flex flex-column">
                 <h3 class="mb-5">Projects</h3>
                 <!-- project card template -->
@@ -112,8 +104,8 @@
                     </div>
                 </div> -->
 
-                <div class="d-flex flex-wrap w-100 justify-content-center mb-5">
-                    <div class="mr-auto">
+                <div class="d-flex flex-wrap w-100 justify-content-center mb-5 project bg-dark p-5">
+                    <div class="mr-auto project-image-container">
                         <img src="assets/image-example.png" alt="debian mockup webpage user interface">
                     </div>
                     <div class="w-50">
@@ -123,8 +115,8 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-wrap w-100 justify-content-around mb-5">
-                    <div class="mr-auto">
+                <div class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-dark p-5">
+                    <div class="mr-auto project-image-container">
                         <img src="assets/generic-video-sharing-webpage-image-sample.png" alt="generic video sharing webpage user interface">
                     </div>
                     <div class="w-50">
@@ -134,8 +126,8 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-wrap w-100 justify-content-around">
-                    <div class="mr-auto">
+                <div class="d-flex flex-wrap w-100 justify-content-around project bg-dark p-5">
+                    <div class="mr-auto project-image-container">
                         <img src="assets/calculator-image-sample.png" alt="calculator project user interface">
                     </div>
                     <div class="w-50">
@@ -144,13 +136,13 @@
                         <a href="#">View project page</a>
                     </div>
                 </div>
-
             </section>
 
+            <!-- volunteer project -->
             <section class="container-fluid p-5 volunteer-work d-flex flex-column">
                 <h3 class="mb-5">Volunteer Work</h3>
-                <div class="d-flex flex-wrap w-100 justify-content-around">
-                    <div class="mr-auto">
+                <div class="d-flex flex-wrap w-100 justify-content-around project bg-dark p-5">
+                    <div class="mr-auto project-image-container">
                         <img src="assets/houghton-gpa-calculator-sample-image.png" alt="houghton GPA calculator user interface">
                     </div>
                     <div class="w-50">
@@ -161,6 +153,7 @@
                 </div>
             </section>
 
+            <!-- about section -->
             <section id="about" class="container-fluid p-5">
                 <h3>About</h3>
                 <p class="font-italic w-50 mx-auto">Hello, I'm Josh Kho and my goal is to develop quality front-ends. I graduated from Houghton University with a bachelors in computer science. During my time in university, I discovered a substantial sense of satisfaction in my work in web development than any other focus in computer science and information technology I have explored. I continuously look forward to expanding my skills and use them to benefit those with front-end needs.</p>
@@ -168,7 +161,8 @@
 
         </main>
 
-        <footer class="container-fluid bg-dark d-flex flex-column align-items-center py-5 px-0" id="contact">
+        <!-- contact information -->
+        <footer class="container-fluid bg-secondary d-flex flex-column align-items-center py-5 px-0" id="contact">
             <h3 class="text-white">Contact:</h3>
 
             <div class="footer-bottom my-5 row">
