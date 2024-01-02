@@ -20,7 +20,8 @@
                 font-size: 24px;
             }
 
-            img{
+            /* set image dimensions relative to parent element */
+            .project-thumbnail{
                 width: 100%;
             }
 
@@ -28,6 +29,7 @@
                 width: 20%;
             }
 
+            /* set project image containers to a fixed width */
             .project-image-container{
                 width: 375px;
             }
@@ -108,21 +110,10 @@
             <!-- projects -->
             <section class="container-fluid p-5 projects d-flex flex-column">
                 <h3 class="mb-5">Projects</h3>
-                <!-- project card template -->
-                <!-- <div class="row mx-auto w-50">
-                    <div class="col">
-                        <img src="image-example.png" alt="test image">
-                    </div>
-                    <div class="col">
-                        <p class="project-title">Project Title</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, unde dignissimos, cum magni earum perspiciatis iure similique officiis architecto aspernatur at culpa ipsam iste. Odit iusto aliquid sunt alias molestiae!</p>
-                        <a href="#">View project page</a>
-                    </div>
-                </div> -->
 
                 <div class="d-flex flex-wrap w-100 justify-content-center mb-5 project bg-dark p-5">
                     <div class="mr-auto project-image-container">
-                        <img src="assets/debian-front-end-sample-image.png" alt="debian mockup webpage user interface">
+                        <img class="project-thumbnail" src="assets/debian-front-end-sample-image.png" alt="debian mockup webpage user interface">
                     </div>
                     <div class="w-50">
                         <h4>Debian Mockup Webpage</h4>
@@ -133,7 +124,7 @@
 
                 <div class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-dark p-5">
                     <div class="mr-auto project-image-container">
-                        <img src="assets/generic-video-sharing-webpage-image-sample.png" alt="generic video sharing webpage user interface">
+                        <img class="project-thumbnail" src="assets/generic-video-sharing-webpage-image-sample.png" alt="generic video sharing webpage user interface">
                     </div>
                     <div class="w-50">
                         <h4>Generic Video Sharing Webpage</h4>
@@ -144,7 +135,7 @@
 
                 <div class="d-flex flex-wrap w-100 justify-content-around project bg-dark p-5">
                     <div class="mr-auto project-image-container">
-                        <img src="assets/calculator-image-sample.png" alt="calculator project user interface">
+                        <img class="project-thumbnail" src="assets/calculator-image-sample.png" alt="calculator project user interface">
                     </div>
                     <div class="w-50">
                         <h4>Calculator</h4>
@@ -159,7 +150,7 @@
                 <h3 class="mb-5">Volunteer Work</h3>
                 <div class="d-flex flex-wrap w-100 justify-content-around project bg-dark p-5">
                     <div class="mr-auto project-image-container">
-                        <img src="assets/houghton-gpa-calculator-sample-image.png" alt="houghton GPA calculator user interface">
+                        <img class="project-thumbnail" src="assets/houghton-gpa-calculator-sample-image.png" alt="houghton GPA calculator user interface">
                     </div>
                     <div class="w-50">
                         <h4>Grade Point Average Calculator</h4>
