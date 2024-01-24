@@ -39,16 +39,16 @@
 
       /* set image dimensions relative to parent element */
       .project-thumbnail {
-        width: 100%;
+        max-width: 100%;
       }
 
       .icon {
-        width: 20%;
+        max-width: 20%;
       }
 
       /* set project image containers to a fixed width */
       .project-image-container {
-        width: 375px;
+        max-width: 375px;
       }
 
       .project {
@@ -136,9 +136,9 @@
         <h3 class="mb-5 text-white display-4">Projects</h3>
 
         <div
-          class="d-flex flex-wrap w-100 justify-content-center mb-5 project bg-light p-5"
+          class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-light p-5"
         >
-          <div class="mr-auto project-image-container">
+          <div class="project-image-container">
             <img
               class="project-thumbnail"
               src="assets/debian-front-end-sample-image.png"
@@ -163,7 +163,7 @@
         <div
           class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-light p-5"
         >
-          <div class="mr-auto project-image-container">
+          <div class="project-image-container">
             <img
               class="project-thumbnail"
               src="assets/portfolio-site-image.png"
@@ -187,7 +187,7 @@
         <div
           class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-light p-5"
         >
-          <div class="mr-auto project-image-container">
+          <div class="project-image-container">
             <img
               class="project-thumbnail"
               src="assets/to-do-app-image.png"
@@ -208,7 +208,7 @@
         <div
           class="d-flex flex-wrap w-100 justify-content-around project bg-light p-5"
         >
-          <div class="mr-auto project-image-container">
+          <div class="project-image-container">
             <img
               class="project-thumbnail"
               src="assets/calculator-react-image.png"
@@ -234,7 +234,7 @@
         <div
           class="d-flex flex-wrap w-100 justify-content-around project bg-light p-5"
         >
-          <div class="mr-auto project-image-container">
+          <div class="project-image-container">
             <img
               class="project-thumbnail"
               src="assets/houghton-gpa-calculator-sample-image.png"
