@@ -1,12 +1,9 @@
 # Personal Portfolio Webpage
 
-My personal webpage which showcases a few web development oriented projects I have worked on.
+A webpage to showcase my demonstrated skills with front-end technology.
 
 ## Features
 
-- Navigation bar
-- A slideshow of the technologies used
-- Personal projects
-- Volunteer projects
-- An about section
-- Footer with contact information
+- Professional summary
+- Projects
+- Contact information
