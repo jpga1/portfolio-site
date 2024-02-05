@@ -47,13 +47,39 @@
 
       /* set project image containers to a fixed width */
       .project-image-container {
-        max-width: 375px;
+        /* max-width: 375px; */
+        max-width: 90%;
       }
 
       .project {
         background-color: white;
         border: 3px solid grey;
         border-radius: 20px;
+      }
+
+      .technologies > p {
+        border-radius: 5px;
+        color: white;
+      }
+
+      .technology-html {
+        background-color: red;
+      }
+
+      .technology-css {
+        background-color: blue;
+      }
+
+      .technology-bootstrap {
+        background-color: purple;
+      }
+
+      .technology-javascript {
+        background-color: orange;
+      }
+
+      .technology-react {
+        background-color: cyan;
       }
     </style>
   </head>
@@ -78,7 +104,7 @@
       </div>
     </header>
 
-    <main class="p-5 text-center text-dark d-flex flex-column">
+    <main class="text-center text-dark">
       <!-- about section -->
       <section id="about" class="container-fluid p-5 text-white">
         <h3>About</h3>
@@ -94,107 +120,13 @@
       </section>
 
       <!-- projects -->
-      <section class="container-fluid p-5 projects d-flex flex-column">
+      <section
+        class="container-fluid p-5 d-flex flex-column align-items-center"
+      >
         <h3 class="mb-5 text-white display-4">Projects</h3>
 
         <div
-          class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-light p-5"
-        >
-          <div class="project-image-container">
-            <img
-              class="project-thumbnail"
-              src="assets/debian-front-end-sample-image.png"
-              alt="debian mockup webpage user interface"
-            />
-          </div>
-          <div class="w-50">
-            <h4 class="font-weight-bold">Debian Mockup Webpage</h4>
-            <p>
-              A mockup webpage of Debian.org that intends to explore
-              improvements in layout, aesthetics, user-friendliness, and
-              minimalism.
-            </p>
-            <a
-              href="https://github.com/jpga1/debian-mockup-front-end"
-              target="_blank"
-              >View project page</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-light p-5"
-        >
-          <div class="project-image-container">
-            <img
-              class="project-thumbnail"
-              src="assets/portfolio-site-image.png"
-              alt="Portfolio webpage user interface"
-            />
-          </div>
-          <div class="w-50">
-            <h4 class="font-weight-bold">Portfolio Webpage</h4>
-            <p>
-              A portfolio webpage built using react and the bootstrap framework,
-              which showcases web development oriented projects.
-            </p>
-            <a
-              href="https://github.com/jpga1/portfolio-site-react"
-              target="_blank"
-              >View project page</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-wrap w-100 justify-content-around mb-5 project bg-light p-5"
-        >
-          <div class="project-image-container">
-            <img
-              class="project-thumbnail"
-              src="assets/to-do-app-image.png"
-              alt="to-do list project user interface"
-            />
-          </div>
-          <div class="w-50">
-            <h4 class="font-weight-bold">To-do List App</h4>
-            <p>
-              A to-do list application implemented using react and bootstrap.
-            </p>
-            <a href="https://github.com/jpga1/to-do-list-app" target="_blank"
-              >View project page</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-wrap w-100 justify-content-around project bg-light p-5"
-        >
-          <div class="project-image-container">
-            <img
-              class="project-thumbnail"
-              src="assets/calculator-react-image.png"
-              alt="calculator project user interface"
-            />
-          </div>
-          <div class="w-50">
-            <h4 class="font-weight-bold">Calculator</h4>
-            <p>
-              A calculator web application, made with react, which performs
-              fundamental arthimetic functions.
-            </p>
-            <a href="https://github.com/jpga1/calculator-react" target="_blank"
-              >View project page</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- volunteer project -->
-      <section class="container-fluid p-5 volunteer-work d-flex flex-column">
-        <h3 class="mb-5 text-white display-4">Volunteer Work</h3>
-        <div
-          class="d-flex flex-wrap w-100 justify-content-around project bg-light p-5"
+          class="d-flex flex-column align-items-center mb-5 project bg-light p-5 w-50"
         >
           <div class="project-image-container">
             <img
@@ -211,9 +143,141 @@
               credits, and cummulative grade point average data. Credit and
               grading schemes are based on Houghton University's standards
             </p>
+
+            <div class="technologies d-flex justify-content-around flex-wrap">
+              <p class="technology-html p-1">HTML</p>
+              <p class="technology-css p-1">CSS</p>
+              <p class="technology-javascript p-1">JavaScript</p>
+            </div>
+
             <a
               href="https://github.com/jpga1/houghton-gpa-calculator"
               target="_blank"
+              >View project page</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column align-items-center mb-5 project bg-light p-5 w-50"
+        >
+          <div class="project-image-container">
+            <img
+              class="project-thumbnail"
+              src="assets/debian-front-end-sample-image.png"
+              alt="debian mockup webpage user interface"
+            />
+          </div>
+          <div class="w-50">
+            <h4 class="font-weight-bold">Debian Mockup Webpage</h4>
+            <p>
+              A mockup webpage of debian.org that intends to explore
+              improvements in layout, aesthetics, user-friendliness, and
+              minimalism.
+            </p>
+            <div class="technologies d-flex justify-content-around flex-wrap">
+              <p class="technology-html p-1">HTML</p>
+              <p class="technology-css p-1">CSS</p>
+              <p class="technology-bootstrap p-1">Bootstrap</p>
+            </div>
+
+            <a
+              href="https://github.com/jpga1/debian-mockup-front-end"
+              target="_blank"
+              >View project page</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column align-items-center mb-5 project bg-light p-5 w-50"
+        >
+          <div class="project-image-container">
+            <img
+              class="project-thumbnail"
+              src="assets/portfolio-site-image.png"
+              alt="Portfolio webpage user interface"
+            />
+          </div>
+          <div class="w-50">
+            <h4 class="font-weight-bold">Portfolio Webpage</h4>
+            <p>
+              A portfolio webpage built using react and the bootstrap framework,
+              which showcases web development oriented projects.
+            </p>
+
+            <div class="technologies d-flex justify-content-around flex-wrap">
+              <p class="technology-html p-1">HTML</p>
+              <p class="technology-css p-1">CSS</p>
+              <p class="technology-javascript p-1">JavaScript</p>
+              <p class="technology-bootstrap p-1">Bootstrap</p>
+              <p class="technology-react p-1">React</p>
+            </div>
+
+            <a
+              href="https://github.com/jpga1/portfolio-site-react"
+              target="_blank"
+              >View project page</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column align-items-center mb-5 project bg-light p-5 w-50"
+        >
+          <div class="project-image-container">
+            <img
+              class="project-thumbnail"
+              src="assets/calculator-react-image.png"
+              alt="calculator project user interface"
+            />
+          </div>
+          <div class="w-50">
+            <h4 class="font-weight-bold">Calculator</h4>
+            <p>
+              A calculator web application, made with react, which performs
+              fundamental arthimetic functions.
+            </p>
+
+            <div class="technologies d-flex justify-content-around flex-wrap">
+              <p class="technology-html p-1">HTML</p>
+              <p class="technology-css p-1">CSS</p>
+              <p class="technology-javascript p-1">JavaScript</p>
+              <p class="technology-bootstrap p-1">Bootstrap</p>
+              <p class="technology-react p-1">React</p>
+            </div>
+
+            <a href="https://github.com/jpga1/calculator-react" target="_blank"
+              >View project page</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column align-items-center mb-5 project bg-light p-5 w-50"
+        >
+          <div class="project-image-container">
+            <img
+              class="project-thumbnail"
+              src="assets/to-do-app-image.png"
+              alt="to-do list project user interface"
+            />
+          </div>
+          <div class="w-50">
+            <h4 class="font-weight-bold">To-do List App</h4>
+            <p>
+              A to-do list application implemented using react and bootstrap.
+            </p>
+
+            <div class="technologies d-flex justify-content-around flex-wrap">
+              <p class="technology-html p-1">HTML</p>
+              <p class="technology-css p-1">CSS</p>
+              <p class="technology-javascript p-1">JavaScript</p>
+              <p class="technology-bootstrap p-1">Bootstrap</p>
+              <p class="technology-react p-1">React</p>
+            </div>
+
+            <a href="https://github.com/jpga1/to-do-list-app" target="_blank"
               >View project page</a
             >
           </div>
