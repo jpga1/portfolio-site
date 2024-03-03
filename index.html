@@ -35,20 +35,13 @@
         background-color: black;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.25rem;
+        padding: 0;
+        margin: 0;
       }
 
-      /* set image dimensions relative to parent element */
-      .project-thumbnail {
-        max-width: 100%;
-      }
-
-      .icon {
-        max-width: 20%;
-      }
-
-      /* set image containers max width and shadow effect */
-      .project-image-container {
-        max-width: 90%;
+      /* set image dimensions relative to parent element and use a white shadow outline */
+      .project-preview {
+        width: 80%;
         box-shadow: 0 0 1rem white;
       }
 
@@ -80,7 +73,7 @@
     </style>
   </head>
 
-  <body class="p-0 m-0">
+  <body>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="navbar-brand" href="#">Joshua Kho</a>
@@ -122,13 +115,11 @@
         <h3 class="mb-5 text-white display-4">Projects</h3>
 
         <div class="d-flex flex-column align-items-center mb-5 text-white w-50">
-          <div class="project-image-container p-3">
-            <img
-              class="project-thumbnail"
-              src="assets/houghton-gpa-calculator-sample-image.png"
-              alt="houghton GPA calculator user interface"
-            />
-          </div>
+          <img
+            class="project-preview"
+            src="assets/houghton-gpa-calculator-sample-image.png"
+            alt="houghton GPA calculator user interface"
+          />
           <div class="w-50 p-3">
             <h4 class="font-weight-bold">Grade Point Average Calculator</h4>
             <p>
@@ -151,13 +142,11 @@
         </div>
 
         <div class="d-flex flex-column align-items-center mb-5 text-white w-50">
-          <div class="project-image-container p-3">
-            <img
-              class="project-thumbnail"
-              src="assets/debian-front-end-sample-image.png"
-              alt="debian mockup webpage user interface"
-            />
-          </div>
+          <img
+            class="project-preview"
+            src="assets/debian-front-end-sample-image.png"
+            alt="debian mockup webpage user interface"
+          />
           <div class="w-50 p-3">
             <h4 class="font-weight-bold">Debian Mockup Webpage</h4>
             <p>
@@ -179,13 +168,11 @@
         </div>
 
         <div class="d-flex flex-column align-items-center mb-5 text-white w-50">
-          <div class="project-image-container p-3">
-            <img
-              class="project-thumbnail"
-              src="assets/portfolio-site-image.png"
-              alt="Portfolio webpage user interface"
-            />
-          </div>
+          <img
+            class="project-preview"
+            src="assets/portfolio-site-image.png"
+            alt="Portfolio webpage user interface"
+          />
           <div class="w-50 p-3">
             <h4 class="font-weight-bold">Portfolio Webpage</h4>
             <p>
@@ -213,13 +200,11 @@
         </div>
 
         <div class="d-flex flex-column align-items-center mb-5 text-white w-50">
-          <div class="project-image-container p-3">
-            <img
-              class="project-thumbnail"
-              src="assets/calculator-react-image.png"
-              alt="calculator project user interface"
-            />
-          </div>
+          <img
+            class="project-preview"
+            src="assets/calculator-react-image.png"
+            alt="calculator project user interface"
+          />
           <div class="w-50 p-3">
             <h4 class="font-weight-bold">Calculator</h4>
             <p>
@@ -244,13 +229,11 @@
         </div>
 
         <div class="d-flex flex-column align-items-center mb-5 text-white w-50">
-          <div class="project-image-container p-3">
-            <img
-              class="project-thumbnail"
-              src="assets/to-do-app-image.png"
-              alt="to-do list project user interface"
-            />
-          </div>
+          <img
+            class="project-preview"
+            src="assets/to-do-app-image.png"
+            alt="to-do list project user interface"
+          />
           <div class="w-50 p-3">
             <h4 class="font-weight-bold">To-do List App</h4>
             <p>A to-do list application.</p>
